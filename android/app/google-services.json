@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "622454579771",
+    "project_id": "test-flutter-71245",
+    "storage_bucket": "test-flutter-71245.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622454579771:android:bb8ef0f144e0c5ed24721e",
+        "android_client_info": {
+          "package_name": "com.example.backend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4YT6umO4AegPFE5Lz9KyVJcXKf1KH7Jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622454579771:android:6bff24a739fb889324721e",
+        "android_client_info": {
+          "package_name": "com.example.journal_app_in_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4YT6umO4AegPFE5Lz9KyVJcXKf1KH7Jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
