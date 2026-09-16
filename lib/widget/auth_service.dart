@@ -59,6 +59,7 @@ class AuthService {
         email,
       );
 
+
       await _saveUserState(true);
 
       return result;

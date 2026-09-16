@@ -42,11 +42,34 @@ class JournalEntryService {
           .snapshots()
           .map(
             (snapshot) => snapshot.docs
-                .map((doc) => JournalEntry.fromFireStore(doc))
-                .toList(),
-          );
+            .map(
+              (doc) => JournalEntry.fromFireStore(doc),
+        )
+            .toList(),
+      );
     } catch (e) {
       print("Error getting journal entries: $e");
+      rethrow;
+    }
+  }
+
+  // Delete journal entry
+  Future<void> deleteEntry(String entryId) async {
+    try {
+      final user = _auth.currentUser;
+
+      if (user == null) {
+        throw Exception("User is not logged in");
+      }
+
+      await _firestore
+          .collection('users')
+          .doc(user.uid)
+          .collection('entries')
+          .doc(entryId)
+          .delete();
+    } catch (e) {
+      print("Error deleting journal entry: $e");
       rethrow;
     }
   }
